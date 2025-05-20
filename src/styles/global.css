@@ -1,10 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Limelight&display=swap");
 @import "tailwindcss";
 
+@theme {
+  --color-beam-100: hsl(174, 38%, 82%);
+  --color-beam-300: hsl(174, 38%, 62%);
+  --color-beam-500: hsl(174, 38%, 42%);
+  --color-beam-700: hsl(174, 38%, 27%);
+  --color-beam-900: hsl(174, 38%, 12%);
+
+  --font-limelight: "Limelight", serif;
+}
+
 @keyframes twinkle {
-    0%, 100% { opacity: 0.8; transform: scale(1); }
-    50%      { opacity: 0.3; transform: scale(1.2); }
+  0%,
+  100% {
+    opacity: 0.8;
+    transform: scale(1);
   }
-  
-  .twinkle {
-    animation: twinkle 3s ease-in-out infinite;
+  50% {
+    opacity: 0.3;
+    transform: scale(1.2);
   }
+}
+
+.twinkle {
+  animation: twinkle 3s ease-in-out infinite;
+}
