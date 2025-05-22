@@ -15,22 +15,66 @@ import Navbar from "../components/navbar.astro";
     <title>Beam Micro Salon</title>
   </head>
   <body>
-    <div class="bg-beam-500 w-screen flex flex-col justify-start items-center">
+    <div
+      class="bg-beam-500 w-screen flex flex-col gap-4 justify-start items-center"
+    >
       <Navbar />
       <header class="relative w-7xl" id="starfield">
-        <div class="w-full h-full flex flex-col justify-start items-center">
-          <div class="mt-4 border-solid border-beam-900 border-t-6 border-b-6">
+        <div
+          class="w-full h-full flex flex-col gap-4 justify-start items-center"
+        >
+          <div class="border-solid border-beam-900 border-t-2 border-b-2">
             <h1 class="text-beam-900 text-9xl font-limelight">
               Beam Micro Salon
             </h1>
           </div>
-          <div class="w-full flex flex-row justify-end">
-            <div class="w-[450px] h-[700px] bg-beam-700 mt-8 mr-16 mb-8">
+          <div class="w-full flex flex-row justify-center">
+            <div class="w-full h-[700px] bg-beam-700 mr-16 ml-16">
               <!-- I will be a picture one day -->
             </div>
           </div>
         </div>
       </header>
+      <div
+        class="flex flex-row justify-start items-start w-7xl gap-16 pt-4 pb-4 pl-32 pr-32"
+      >
+        <div class="flex-1">
+          <div class="flex flex-col justify-end items-start mt-12">
+            <h2 class="text-right font-pompiere text-5xl">Hi, I'm Annlyn 👋</h2>
+            <br />
+            <p>
+              I’m a total hair nerd with over 10 years experience in the beauty
+              industry. My focus is lived-in colors and transformative looks. My
+              goal is for you to leave BEAMING. Come check out my new space!
+            </p>
+            <br />
+            <p>
+              When I’m not behind the chair, you can catch me hanging in the
+              mountains with my hubby wubby and my rottweiler Lottie.
+            </p>
+            <br />
+            <div class="flex items-center gap-2">
+              <a
+                href="#"
+                class="text-beam-900 bg-beam-300 hover:bg-beam-900 hover:text-beam-500 px-4 py-2 border font-pompiere text-xl"
+                >Book An Appointment</a
+              >
+              <a href="#"><img src="../../public/instagram.svg" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1">
+          <div class="w-[450px] h-[450px] bg-beam-700">
+            <!-- I will be an illustration one day -->
+          </div>
+        </div>
+      </div>
+      <div class="w-7xl flex flex-row gap-16 pl-16 pr-16">
+        <div class="h-[400px] flex-1 bg-beam-700"></div>
+        <div class="h-[400px] flex-1 bg-beam-700"></div>
+        <div class="h-[400px] flex-1 bg-beam-700"></div>
+      </div>
+      <div class="w-7xl h-[500px] bg-beam-700"></div>
     </div>
   </body>
   <script src="scripts/starfield.js" type="module"></script>
