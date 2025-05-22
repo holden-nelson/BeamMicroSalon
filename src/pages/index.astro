@@ -23,7 +23,7 @@ import Navbar from "../components/navbar.astro";
         <div
           class="w-full h-full flex flex-col gap-4 justify-start items-center"
         >
-          <div class="border-solid border-beam-900 border-t-2 border-b-2">
+          <div class="border-beam-900 border-t-2 border-b-2">
             <h1 class="text-beam-900 text-9xl font-limelight">
               Beam Micro Salon
             </h1>
@@ -42,13 +42,13 @@ import Navbar from "../components/navbar.astro";
           <div class="flex flex-col justify-end items-start mt-12">
             <h2 class="text-right font-pompiere text-5xl">Hi, I'm Annlyn 👋</h2>
             <br />
-            <p>
+            <p class="text-xl">
               I’m a total hair nerd with over 10 years experience in the beauty
               industry. My focus is lived-in colors and transformative looks. My
               goal is for you to leave BEAMING. Come check out my new space!
             </p>
             <br />
-            <p>
+            <p class="text-xl">
               When I’m not behind the chair, you can catch me hanging in the
               mountains with my hubby wubby and my rottweiler Lottie.
             </p>
@@ -56,10 +56,10 @@ import Navbar from "../components/navbar.astro";
             <div class="flex items-center gap-2">
               <a
                 href="#"
-                class="text-beam-900 bg-beam-300 hover:bg-beam-900 hover:text-beam-500 px-4 py-2 border font-pompiere text-xl"
-                >Book An Appointment</a
+                class="text-beam-500 bg-beam-900 hover:bg-beam-300 hover:text-beam-900 px-4 py-2 border font-pompiere text-xl"
+                >Book with Annlyn</a
               >
-              <a href="#"><img src="../../public/instagram.svg" /></a>
+              <a href="#"><img src="/instagram.svg" /></a>
             </div>
           </div>
         </div>
@@ -70,9 +70,119 @@ import Navbar from "../components/navbar.astro";
         </div>
       </div>
       <div class="w-7xl flex flex-row gap-16 pl-16 pr-16">
-        <div class="h-[400px] flex-1 bg-beam-700"></div>
-        <div class="h-[400px] flex-1 bg-beam-700"></div>
-        <div class="h-[400px] flex-1 bg-beam-700"></div>
+        <div class="flex-1">
+          <div class="flex flex-col gap-4 justify-start items-center">
+            <div class="h-[300px] w-[300px] border-2">
+              <!-- I will be a picture -->
+            </div>
+            <div>
+              <h2 class="text-4xl font-pompiere text-center">Jordan</h2>
+              <p class="text-center">Stylist</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <a
+                href="#"
+                class="text-beam-500 bg-beam-900 hover:bg-beam-300 hover:text-beam-900 px-4 py-2 border font-pompiere text-xl"
+                >Book with Jordan</a
+              >
+              <a href="#"><img src="/instagram.svg" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1">
+          <div class="flex flex-col gap-4 justify-start items-center">
+            <div class="h-[300px] w-[300px] border-2">
+              <!-- I will be a picture -->
+            </div>
+            <div>
+              <h2 class="text-4xl font-pompiere text-center">Jennifer</h2>
+              <p class="text-center">Aesthetician</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <a
+                href="#"
+                class="text-beam-500 bg-beam-900 hover:bg-beam-300 hover:text-beam-900 px-4 py-2 border font-pompiere text-xl"
+              >
+                Book with Jennifer
+              </a>
+              <a href="#"><img src="/instagram.svg" /></a>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1">
+          <div class="flex flex-col gap-4 justify-start items-center">
+            <div class="h-[300px] w-[300px] border-2">
+              <!-- I will be a picture -->
+            </div>
+            <div>
+              <h2 class="text-4xl font-pompiere text-center">Victor</h2>
+              <p class="text-center">Barber</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <a
+                href="#"
+                class="text-beam-500 bg-beam-900 hover:bg-beam-300 hover:text-beam-900 px-4 py-2 border font-pompiere text-xl"
+                >Book with Victor</a
+              >
+              <a href="#"><img src="/instagram.svg" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-7xl flex flex-col items-center mt-12">
+        <h2 class="font-pompiere text-4xl">
+          Just want the next available appointment?
+        </h2>
+        <div class="w-7xl flex flex-row gap-16 pl-16 pr-16 mt-2">
+          <div class="flex-1">
+            <form class="flex flex-col gap-4" action="#" method="POST">
+              <div class="flex flex-col">
+                <label for="name">Name *</label>
+                <input
+                  class="bg-beam-900 border-2 h-12 text-beam-500 focus:outline-none p-2"
+                  type="text"
+                  name="name"
+                  id="name"
+                />
+              </div>
+
+              <div class="flex flex-col">
+                <label for="email">Email *</label>
+                <input
+                  class="bg-beam-900 border-2 h-12 text-beam-500 focus:outline-none p-2"
+                  type="text"
+                  name="email"
+                  id="email"
+                />
+              </div>
+
+              <div class="flex flex-col">
+                <label for="note">Anything else we should know?</label>
+                <textarea
+                  class="bg-beam-900 border-2 h-40 w-full text-beam-500 focus:outline-none p-2"
+                  name="note"
+                  id="note"></textarea>
+              </div>
+
+              <div class="flex flex-row justify-start">
+                <button
+                  class="text-beam-500 bg-beam-900 hover:bg-beam-300 hover:text-beam-900 px-4 py-2 border font-pompiere text-xl"
+                  >Submit</button
+                >
+              </div>
+            </form>
+          </div>
+          <div class="flex-1">
+            <div class="flex flex-col mt-8">
+              <p class="text-xl">
+                Our stylists all manage their own books with separate systems.
+                If you have no preferred stylist, and just want the next
+                available appointment, get on our waitlist, and we’ll reach out
+                and get you scheduled pronto.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="w-7xl h-[500px] bg-beam-700"></div>
     </div>
